@@ -149,17 +149,17 @@ console.log(person);
 
 //anonymous function with '=>'
 setTimeout(()=>{
-    console.loglog(1+1);
+    console.log(1+1);
 }, 5000)
 
-//anonymous function 
+//anonymous function (same as above) 
 setTimeout(function(){
-    console.loglog(1+1);
+    console.log(1+1);
 }, 5000)
 
 //name functon, name as x
 function namedx(){
-    console.loglog(1+1);
+    console.log(1+1);
 }
 setTimeout(namedx, 5000)
 
@@ -169,7 +169,7 @@ setInterval(()=>{
 }, 2000)
 
 //exception
-function throwError(){}
+function throwError(){
 throw new Error('This is an error!');
 }
 
