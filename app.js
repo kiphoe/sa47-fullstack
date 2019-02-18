@@ -1,9 +1,9 @@
-console.log("Hello World 2");
+/*console.log("Hello World 2");
 
 var x = 1;
 console.log(typeof(x))
 x = "Kenneth";
-console.log(typeof(x));
+console.log(typeof(x));// determine datatype
 console.log(x);
 
 function make1(x,y){
@@ -25,8 +25,10 @@ function make2(x,y,z){
 
 
 make2(null,null,100);
-make2('xxx',null,100);
-make2('aaa');
+make2('xxx',null,100); //y is null
+make2('aaa'); //y is null yet it is also undefined
+
+
 
 //callback mechanism
 function make3(fn1){
@@ -40,6 +42,7 @@ function fn1(){
 
 make3(fn1);
 
+
 //string concantenation
 str1 = "Apple";
 console.log(str1);
@@ -52,6 +55,7 @@ str2 = `
         \n test gello!
         `
 console.log(str2);
+
 
 //
 var x = true;
@@ -81,7 +85,7 @@ console.log(fruit[0]);
 console.log(fruit[1]);
 fruit.push('Pineapple');
 console.log(fruit);
-fruit.pop();
+fruit.pop();//remove the last element of the array
 console.log(fruit);
 fruit.unshift(1);//insert from the front
 console.log(fruit);
@@ -168,6 +172,7 @@ setInterval(()=>{
     console.log("setInterval >"+1+1);
 }, 2000)
 
+
 //exception
 function throwError(){
 throw new Error('This is an error!');
@@ -212,7 +217,7 @@ t.forEach((result, index)=>{
 })
 
 //for loop
-for(var i=0; i < i.length; i++){
+for(var i=0; i < t.length; i++){
     console.log(t[i]);
 }
 
@@ -220,12 +225,13 @@ var months = ['Jan', 'Feb','Mar', 'Apr', 'May'];
 console.log(months);
 //first param remove from the front, second param is remove from behind
 //- one
-copyMonths.slice(1,4); 
+copyMonths = months.slice(1, 4);
 console.log(">>>" + copyMonths);
 //index, deletecount, value
 months.splice(4,2,'June', 'July'); 
 //remove May from the array and insert June and July
 console.log(months);
+
 
 // create object
 var person = {
@@ -246,7 +252,7 @@ function Person2(firstname, lastname, age, gender){
 
 var p2 = new Person2('Kenneth', 'Phang', 42, 'M');
 console.log(p2.age);
-
+*/
 //inheritance
 class Animal {
     constructor(noOfLegs, colour, shape){
@@ -255,19 +261,20 @@ class Animal {
         this.shape = shape;
     }
 
-    getNoOfLegs(){
-        return this.noOfLegs;
+    getAdditionalNoOfLegs(){
+        return this.noOfLegs +2;
     }
 }
 
-var c = new Animal(4, brown, 'dog');
+var c = new Animal(4, 'brown', 'dog');
 console.log(c.noOfLegs);
 console.log(c.colour);
 console.log(c.getAdditionalNoOfLegs());
 
-class Cat extends Animal{
+
+class Cat extends Animal {
     constructor(noOfLegs, colour, shape){
-        super(noOfLegs, colour, shape);
+        super(noOfLegs, colour,shape);
     }
 
     getBlackColour(){
@@ -278,10 +285,9 @@ class Cat extends Animal{
 var cc = new Cat(4, 'red', 'elephant');
 console.log("additional legs for cat > " + cc.getAdditionalNoOfLegs());
 
-//set filter
-const words = ['spray', 'comb', 'limit', 'chocolate', 'coffee' ];
+const words = ['spray', 'comb', 'limit', 'chocolate', 'coffee'];
 
-const longwords = words.filter(word => word.length >6);
+const longwords = words.filter(word=> word.length > 6);
 console.log(longwords);
 
 //

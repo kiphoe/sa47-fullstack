@@ -1,11 +1,11 @@
-exports.sayHelloInEnglish= function(){
-    return 'Hello';
+exports.sayHelloInEnglish = function(){
+    return 'B - Hello';
 };
 
 exports.sayHelloInMalay = function(){
-    return 'Apa Khabar';
+    return 'B- Apa Khabar';
 };
 
 exports.sayHelloInChinese = function(){
-    return 'Ni Hao';
+    return 'B - Ni Hao';
 };
