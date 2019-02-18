@@ -1,4 +1,4 @@
-/*console.log("Hello World 2");
+console.log("Hello World 2");
 
 var x = 1;
 console.log(typeof(x))
@@ -252,7 +252,7 @@ function Person2(firstname, lastname, age, gender){
 
 var p2 = new Person2('Kenneth', 'Phang', 42, 'M');
 console.log(p2.age);
-*/
+
 //inheritance
 class Animal {
     constructor(noOfLegs, colour, shape){
