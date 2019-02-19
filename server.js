@@ -1,5 +1,5 @@
 //middleware of nodejs
-//express is a web application middleware
+//express is a web application middleware like TOMCAT
 const express = require('express');
 
 var app = express();
